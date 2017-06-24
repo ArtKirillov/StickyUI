@@ -26,10 +26,10 @@ public class DoubleAlignmentLabel: UILabel {
         
         for (key, value) in text {
             let leftPart = NSMutableAttributedString(string: "\(key)\t")
-            leftPart.addAttribute(NSForegroundColorAttributeName, value: UIColor.black, range: NSRange(location: 0, length: key.characters.count))
+            leftPart.addAttribute(NSForegroundColorAttributeName, value: UIColor.white, range: NSRange(location: 0, length: key.characters.count))
             
             let rightPart = NSMutableAttributedString(string: "\(value)\n")
-            rightPart.addAttribute(NSForegroundColorAttributeName, value: UIColor.red, range: NSRange(location: 0, length: value.characters.count))
+            rightPart.addAttribute(NSForegroundColorAttributeName, value: UIColor.white, range: NSRange(location: 0, length: value.characters.count))
             
             attText.append(leftPart)
             attText.append(rightPart)
